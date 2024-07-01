@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 480px;
+    margin:100px  auto ;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60vh;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+.personal_content{
+    text-align: center;
+}
+.personal_content p{
+    font-size: 24px;
+    font-weight: 500;
+}
+.day-time{
+    display: flex;
+    gap: 8px;
+}
+/*image dimensions*/
+.image img{
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+}
+
+/*Tech Goals styling*/
+.tech-goals h1{
+    font-size: 22px;
+    margin: 10px 5px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+.goals-para{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.goals-para p{
+    font-size: 20px;
+}
+
+/*links styling*/
+.links{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: orangered;
+}
+.links a{
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight:bold;
+    text-decoration: none;
+}
+.links a:hover{
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+/*Responsiveness*/
+@media(max-width:700px){
+    .container{
+        margin:40px  auto ;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 80vh;
+    }
+}
+@media(max-width:480px){
+    .container{
+        max-width: fit-content;
+        box-shadow: none;
+
+    }
+    .image img{
+        width: 100px;
+        height:100px;
+    }
+    .personal_content p{
+        font-size: 20px;
+    }
+    .tech-goals h1{
+        font-size: 18px;
+    }
+    .goals-para p{
+        font-size:16px;
+    }
+    .links{
+        margin-top:18px;
+        padding: 8px;       
+    }
+    .links a{
+        font-size: 16px;
+    }
+}
+@media(max-width:390px){
+    .image img{
+        width: 80px;
+        height:80px;
+    }
+    .personal_content p{
+        font-size: 18px;
+    }
+    .tech-goals h1{
+        font-size: 16px;
+    }
+    .goals-para p{
+        font-size:14px;
+    }
+    .links{
+        padding:4px;       
+    }
+    .links a{
+        font-size: 14px;
+    }
+}
