@@ -14,7 +14,6 @@
     padding-right: 20px;
     height: 80vh;
     background-color:#fff;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
     border-radius: 5px;
 }
 .personal_content{
@@ -84,7 +83,6 @@
 @media(max-width:480px){
     .container{
         max-width: fit-content;
-        box-shadow: none;
 
     }
     .image img{
